@@ -20,24 +20,24 @@ Close.onclick = function () {
   addFooter.style.display = "flex"; // flex not block لأنه لو حطيت البلوك فسوف يلغي الفليكس الموجود وبالتالي العناصر لن تتوسط
   createCloseFooter.style.display = "none";
   form_h1.style.display = "none";
-  scrollTo(0, document.body.scrllHeight);
+  scrollTo(0,0);
 };
 
 //  التأكد من انشاء الكروت
 create.onclick = () => {
-  if (titleInput.value === "" && descrArea.value === "") {
+  if (titleInput.value == false && descrArea.value == false) {
     titleInput.style = "border: 2px solid red;";
     descrArea.style = "border: 2px solid red;";
 
     titleInput.classList.add("check");
     descrArea.classList.add("check");
-  } else if (titleInput.value !== "" && descrArea.value === "") {
+  } else if (titleInput.value == true && descrArea.value == false) {
     titleInput.style = "border: 1px solid rgb(226 232 240);";
     descrArea.style = "border: 2px solid red;";
 
     descrArea.classList.add("check");
     titleInput.classList.remove("check");
-  } else if (titleInput.value == "" && descrArea.value !== "") {
+  } else if (titleInput.value == false && descrArea.value == true) {
     titleInput.style = "border: 2px solid red ;";
     descrArea.style = "border: 1px solid rgb(226 232 240);";
 
@@ -51,8 +51,10 @@ create.onclick = () => {
     createTodoCards();
   }
 };
+
 // دالة الانشاء والتي سأستدعيها في الايلس
 function createTodoCards() {
+  
   const myPost = {
     userId: Math.ceil(Math.random() * 12),
     title: document.getElementById("titleInput").value,
@@ -80,9 +82,8 @@ function createTodoCards() {
                       </div>
                       
                       `;
+  allCards.style = 'padding-bottom: 150px;';// لحتى يبين منيح الكارد يلي ضفتي جديد وما تغطي عليه اللينير باك قراوند
   allCards.innerHTML += newToDoCard;
-  titleInput.value = "";
-  descrArea.value = "";
 }
 
 //by using AJAX
