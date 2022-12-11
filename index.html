@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <link rel="stylesheet" href="CSS/output.css" />
+  </head>
+  <body>
+    <!-- <section class="container sm:mx-auto"> // سيتم تجاهله حالياً
+      <div
+        id="frame2"
+        class="w-[393px] h-[187px] rounded-xl py-[24px] px-[34px] flex flex-col items-start gap-3 relative top-8 text-white bg-white"
+      >
+        <h1 class="h-7 text-2xl font-extrabold font-inter text-gray-700">
+          Hit the gym
+        </h1>
+        <div
+          class="w-[54px] h-6 top-10 rounded-[10px] gap-3 py-1 px-2 bg-emerald-600 font-inter font-bold text-xs leading-4 order-1"
+        >
+          <span class="w-9 h-4 text-xs leading-[14.52px]">health</span>
+        </div>
+        <p
+          class="text-gray-500 w-[325px] h-14 font-medium text-base leading-5 order-2"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna...
+        </p>
+      </div>
+      <div id="Todo Card" class="TodoCard">
+        <h1
+          class="h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+        >
+          Lorem, ipsum dolor.
+        </h1>
+        <p
+          class="text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididu...
+        </p>
+        <div
+          class="w-[97px] h-[25px] gap-3 flex flex-row items-start p-0 order-2"
+        >
+          <div
+            class="w-[30px] h-[25px] rounded-[10px] gap-[10px] py-[5px] px-2 text-pink-100 flex items-center justify-center bg-pink-100"
+          >
+            <span
+              class="w-[14px] h-[15px] font-inter font-semibold text-xs leading-[14.52px] text-rose-600"
+              >p1</span
+            >
+          </div>
+          <div
+            class="w-[55px] h-[25px] rounded-[10px] gap-[10px] py-[5px] px-2 text-pink-100 flex items-center justify-center bg-green-50"
+          >
+            <span
+              class="w-[39px] h-[15px] font-inter font-semibold text-xs leading-[14.52px] text-green-600"
+              >Health</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="TodoCard h-[118px] mt-[58px]">
+        <h1
+          class="h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+        >
+          Lorem, ipsum dolor.
+        </h1>
+        <div
+          class="w-[97px] h-[25px] gap-3 flex flex-row items-start p-0 order-2"
+        >
+          <div
+            class="w-[30px] h-[25px] rounded-[10px] gap-[10px] py-[5px] px-2 text-pink-100 flex items-center justify-center bg-pink-100"
+          >
+            <span
+              class="w-[14px] h-[15px] font-inter font-semibold text-xs leading-[14.52px] text-rose-600"
+              >p1</span
+            >
+          </div>
+          <div
+            class="w-[55px] h-[25px] rounded-[10px] gap-[10px] py-[5px] px-2 text-pink-100 flex items-center justify-center bg-green-50"
+          >
+            <span
+              class="w-[39px] h-[15px] font-inter font-semibold text-xs leading-[14.52px] text-green-600"
+              >Health</span
+            >
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- end section card -->
+    <header
+      class="fixed top-0 left-0 right-0 z-20 sm:mx-auto bg-gray-50 pt-6 container"
+    >
+      <p
+        class="h-[87px] font-inter font-black text-7xl text-slate-200 text-center"
+      >
+        Daily Todo
+      </p>
+    </header>
+    <section class="min-h-full relative sm:mx-auto bg-gray-50 mt-20 container">
+      <div class="flex flex-col items-center gap-8" id="allCards">
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard">
+          <h1
+            class="title-h1 h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <p
+            class="descr-h1 text-gray-500 w-[377px] h-10 font-medium text-base leading-5 order-1"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididu...
+          </p>
+        </div>
+        <div class="TodoCard h-[360px] bg-white shadow-sm hidden" id="form-h1">
+          <h1
+            class="h-7 text-2xl leading-[29.05px] font-extrabold font-inter text-gray-700"
+          >
+            Lorem, ipsum dolor.
+          </h1>
+          <form action="">
+            <input
+              type="text"
+              id="titleInput"
+              class="h-11 w-[370px] border rounded outline-none text-slate-400 bg-inherit mt-7 p-3"
+              placeholder="Take dog out on walk"
+            />
+            <textarea
+              id="descrArea"
+              class="resize-none h-[70px] w-[370px] border rounded outline-none text-slate-400 bg-inherit mt-4 p-3"
+              placeholder="He needs vaccine shot too"
+            ></textarea>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="add-footer">
+      <a href="#" id="add">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 14V26M26 20H14M38 20C38 22.3638 37.5344 24.7044 36.6298 26.8883C35.7252 29.0722 34.3994 31.0565 32.7279 32.7279C31.0565 34.3994 29.0722 35.7252 26.8883 36.6298C24.7044 37.5344 22.3638 38 20 38C17.6362 38 15.2956 37.5344 13.1117 36.6298C10.9278 35.7252 8.94353 34.3994 7.27208 32.7279C5.60062 31.0565 4.27475 29.0722 3.37017 26.8883C2.46558 24.7044 2 22.3638 2 20C2 15.2261 3.89642 10.6477 7.27208 7.27208C10.6477 3.89642 15.2261 2 20 2C24.7739 2 29.3523 3.89642 32.7279 7.27208C36.1036 10.6477 38 15.2261 38 20Z"
+            stroke="#E2E8F0"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </footer>
+
+    <footer id="createClose-footer" class="hidden">
+      <a href="#create" id="create">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.452 21.9517L18.952 26.4517L26.452 15.9517M38.452 20.4517C38.452 22.8155 37.9864 25.1561 37.0818 27.34C36.1772 29.5238 34.8513 31.5081 33.1799 33.1796C31.5084 34.851 29.5241 36.1769 27.3403 37.0815C25.1564 37.9861 22.8158 38.4517 20.452 38.4517C18.0882 38.4517 15.7475 37.9861 13.5637 37.0815C11.3798 36.1769 9.3955 34.851 7.72404 33.1796C6.05259 31.5081 4.72672 29.5238 3.82213 27.34C2.91755 25.1561 2.45197 22.8155 2.45197 20.4517C2.45197 15.6778 4.34839 11.0994 7.72404 7.72374C11.0997 4.34808 15.6781 2.45166 20.452 2.45166C25.2259 2.45166 29.8042 4.34808 33.1799 7.72374C36.5555 11.0994 38.452 15.6778 38.452 20.4517Z"
+            stroke="#94A3B8"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </a>
+      <a href="#close" id="Close">
+        <svg
+          class="ml-4"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24.6196 16.1356L16.2843 24.7683M24.7683 24.6196L16.1356 16.2843M33.4009 32.9549C31.759 34.6554 29.7983 36.0158 27.6306 36.9585C25.4629 37.9012 23.1308 38.4078 20.7673 38.4492C18.4039 38.4906 16.0555 38.0661 13.8561 37.1999C11.6567 36.3337 9.64948 35.0428 7.94899 33.4009C6.24851 31.759 4.88807 29.7982 3.94536 27.6306C3.00265 25.4629 2.49613 23.1308 2.45471 20.7673C2.41329 18.4039 2.83779 16.0554 3.70398 13.8561C4.57016 11.6567 5.86105 9.64947 7.50297 7.94898C10.819 4.5147 15.3634 2.53835 20.1366 2.4547C24.9097 2.37105 29.5206 4.18696 32.9549 7.50295C36.3892 10.8189 38.3655 15.3634 38.4492 20.1365C38.5328 24.9097 36.7169 29.5206 33.4009 32.9549Z"
+            stroke="#94A3B8"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </a>
+    </footer>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
